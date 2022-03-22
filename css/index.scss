@@ -1,0 +1,723 @@
+
+$colorPrimary:#1c246b;
+$colorSecondary :#EE8912 ;
+$colorBackgroundblue:#1e3d8d;
+
+body {
+    margin:0;
+}
+.textBold{
+    font-weight:bold;
+}
+h1,p,h3{
+    font-family: 'Montserrat', sans-serif;
+    margin:0px;
+}
+
+h2,{
+    font-family: 'Roboto';
+}
+
+button{
+    background-color: $colorSecondary;
+    padding:5px 15px 5px 15px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px $colorSecondary;
+    border:currentColor;
+}
+footer{
+    height:300px;
+    background-color:$colorPrimary;
+}
+/*--------Accueil-----------*/
+
+.header{
+    background-color: $colorPrimary;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow:0px 3px 6px #00000053;
+    &__logo{
+        height:30px;
+        width:33px;
+        padding:20px;
+        padding-left:30px
+    }
+    &__button{
+        font-size: 31px;
+        padding:20px;
+        padding-right:30px;
+        color:white;
+    }
+}
+.accueil{
+    background:transparent linear-gradient(180deg, #1e3d8d , #6F98E5 );
+}
+.accueil{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:0px;
+    &__logo{
+        height:106px;
+        padding-top:63px;
+        padding-bottom:16px;
+    }
+    &__text{
+        text-align: center;
+    }
+    &__button{
+       color:white;
+       font-size:17px;
+       padding:7px 20px 7px 20px;
+       font-weight:bold;
+    }
+    &__imgBG{
+        margin-top:30px;
+    }
+   
+}
+.cat{
+    background-color: #1c246b;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    &__title{
+        color:white;
+        font-size: 25px;
+    }
+}
+
+.services{
+    &__button{
+        background-color: $colorPrimary;
+        margin:20px 15px 20px 15px;
+        border:none;
+        box-shadow:none;
+        font-size: 15px;
+        color:white;
+    }
+}
+
+/*-------Lending-------*/
+
+.lending{
+    background-color: white;
+    &__textBold{
+        padding:22px 44px 22px 44px;
+        font-size:18px;
+        font-weight:bold;
+        text-align:center;
+        border-bottom:solid 1px lightgrey;
+    }
+    &__avantage{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom:solid 1px lightgrey;
+         
+        &--items{
+            margin:25px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &--text{
+            text-align: center;
+        }
+        
+    }
+    &__title{
+        text-align: center;
+    }
+    &__option{
+        border-bottom:solid 1px lightgrey;
+        &--1{
+            display:flex;
+            justify-content: space-between;
+        }
+        &--numero{
+            font-size: 20px;
+            color:white;
+            background-color:black;
+            border-radius: 90px;
+            width:40px;
+            height:25px;
+            text-align: center;
+            padding:5px 10px 5px 10px;
+            margin:30px 20px 20px 45px;
+        }
+        &--text{
+            text-align:left;
+            color:grey;
+           padding: 12px 35px 20px 0px;
+
+        }
+        &--button{
+            background-color: $colorPrimary;
+            box-shadow: none;
+            color:white;
+            width:170px;
+            padding:8px 10px 8px 10px;
+            margin-left:15px;
+            margin-bottom :40px; ;
+            font-size:14px;
+            font-weight: bold;
+        }
+        
+    }
+    .button{
+        display:block;
+        color:white;
+        font-size:16px;
+       padding:8px;
+        margin-right:auto;
+        margin-left:auto;
+        width:140px;
+      margin-top :20px;
+      margin-bottom:35px;
+      font-weight:bold;
+
+    }
+}
+
+/*Wallet*/
+
+.enTete{
+    background-color:$colorBackgroundblue;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+     &__title{
+         padding:20px ;
+         padding-left:40px;
+         font-size:28px;
+         color:white;
+     }
+     &__icone{
+         font-size:30px;
+         color:white;
+         padding-right:30px;
+
+     }
+
+ 
+
+}
+.diagramme{
+    display:flex;
+    flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width:75%;
+  margin:auto;
+}
+
+.cercle{
+    width:140px;
+    height:140px;
+    border-radius: 300px;
+    margin:30px 0px 20px 15px;
+    background-color: $colorBackgroundblue;
+    position:relative;
+    &__total{
+        width:110px;
+        height:110px; 
+        background-color: white;
+        border-radius: 300px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:-55px;
+        margin-top:-55px;
+        &--content{
+            position:absolute;
+           top:45px;
+           left:30px;
+           color:#EE8912
+        }
+    }
+}
+
+.operations{
+    display:flex;
+    flex-direction: column;
+    &__button{
+        margin:10px;
+        background-color: white;
+        border:solid 1px $colorPrimary;
+        box-shadow: none;
+        color:#1e3d8d;
+        padding:4px 15px 4px 15px;
+        
+    }
+}
+
+.tokens{
+    
+    &__title{
+        text-align:center;
+
+    }
+    &__card{
+        font-family: "Montserrat",sans-serif;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:80%;
+        background-color: #1e3d8d;
+        color:white;
+        border-radius: 10px;
+        margin:15px;
+        margin-left:auto;
+        margin-right:auto;
+        padding:10px ;
+        box-shadow: 0px 3px 6px #0000FF7D;
+        &--tokensAmount{
+            padding-top: 4px;
+            color:#B7B7B7;
+        }
+    }
+}
+
+.contracts{
+    &__title{
+        text-align: center;
+    }
+    i{
+        font-size:25px;
+    }
+    &__card{
+        background-color: #1e3d8d;
+        color:white;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius: 15px;
+        margin-bottom:100px;
+
+        &--info{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between; 
+        }
+        
+    &--title{
+        background-color: #EE8912;
+        padding:20px;
+        margin:0px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }  
+    &--rightCorner{
+        padding-right: 10px;;
+          display:flex;
+          align-items: center;
+          justify-content: space-around;
+    } 
+    &--apy{
+        padding:20px;
+    } 
+    &--content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &--operations{
+        display: flex;
+        flex-direction: column;
+        padding:20px;
+    }
+    &--buttonWithdraw{
+        background-color: #1e3d8d;
+        color:white;
+        border: solid 1px white;
+        box-shadow: none;
+        margin-bottom:15px;
+        font-size:18px;
+        padding-right:25px;
+        padding-left:25px;
+    }
+    &--buttonDeposit{
+        
+        color:white;
+        box-shadow: none;
+        font-size:18px;
+        padding-right:25px;
+        padding-left:25px;
+    }
+    &--amount{
+        padding-left:25px;
+    }
+    &--reduce{
+        font-weight: 200;
+        font-size: 13px;;
+    }
+    &--total{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    }
+}
+/*-------------Lending----------*/
+
+.titleLending{
+    color:#1e3d8d;
+    text-align:left;
+    margin:30px;
+}
+
+.subTitleLending{
+    margin:30px;
+    text-align: left;
+    color:#EE8912;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.textLending{
+    font-weight: 400;
+    margin:30px;
+    width:90%;
+    text-align: left;
+    overflow:visible;
+    text-overflow:ellipsis; 
+    flex-wrap: wrap;
+    margin-top:0px;
+}
+.textBolderLending{
+    font-weight:bold;
+    flex-wrap:wrap;   
+    text-align: center;
+   padding:30px;
+    border-bottom:solid 1px lightgrey;
+}
+
+.solutions{
+    position:relative;
+    &__presentations{
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:20px;
+        &--text{
+            text-align:center;
+            margin-bottom:90px;
+        }
+        &--barre{
+            background-color:black;
+            width:10px;
+            height:2px;
+        }
+        &--stars{
+            display:flex;
+            align-items: center;
+        }
+    }
+    &__title{
+        text-align: center;
+    }
+    &__card{
+        text-align: center;
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        margin-bottom:25px;
+        &--top{
+            display:flex;
+            width:90%;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 6px #0000002E;
+            border-radius:10px;
+            margin:0px;
+        }
+        &--name{
+            font-weight: bold;
+            padding:10px;
+            vertical-align: center;
+        }
+        &--id{
+            display: flex;
+            align-items: center;
+            padding:5px;
+
+        }
+        &--icone{
+            height:30px;
+            
+        }
+        &--apy{
+            background-color: #EE8912;
+            padding:15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-top-right-radius:10px;
+            border-bottom-right-radius: 10px;
+            color:white;
+            font-weight:bold;
+            width:120px;
+        }
+        &--main{
+            display:flex;
+            flex-direction: row;
+            width:80%;
+            background-color: #1e3d8d;
+            color:white;
+            align-items: center;
+            justify-content: space-evenly;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        &--info{
+            font-weight: bold;
+            padding:20px 30px 5px 10px;
+            text-align: left;
+        }
+        &--reduce{
+              font-weight: 100;
+              padding:0px 30px 15px 10px;
+              text-align: left;
+        }
+        &--buttons{
+            display: flex;
+            flex-direction: column;
+        }
+        &--buttonDeposit{
+            color:white;
+            font-weight: 600;
+            background-color: #1e3d8d;
+            box-shadow: none;
+            border: solid 1px white;
+            margin:20px;
+            margin-bottom:0px;
+            font-size:17px;
+        }
+        &--buttonInvest{
+            color:white;
+            font-weight: 600;
+            box-shadow:none;
+            margin:20px;
+            font-size:17px;
+        }
+        &--star{
+            color:#EE8912;
+        }
+        &--graph{
+            background-color: white;
+            width: 120px;
+            height:80px;
+            border-radius: 25px;
+            margin-left:10px;
+            color:black;
+            font-size:10px;
+            position: relative;
+            
+        }
+        &--perf{
+            position:absolute;
+            left:10px;
+            top:5px;
+        }
+    }
+    &__purpose{
+        margin-left:auto;
+        margin-right:auto;
+        left:200px;
+        color:grey;
+        border-bottom:1px solid grey;
+        padding:0px;
+        margin:20px;
+        width:165px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 80px;
+
+    }
+    
+}
+
+.faq{
+    &__title{
+        text-align: center;
+
+    }
+    &__card{
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        box-shadow: 0px 0px 6px #0000002E;
+        border-radius:10px;
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:30px;
+    }
+    &__icone{
+        padding:15px;
+    }
+    &__questions{
+        padding:15px;
+    }
+}
+/*------Compte----------*/
+
+.profil{
+    &__title{
+        color:#1e3d8d;
+        text-align: center;
+        padding:20px;
+    }
+    &__card{
+        background-color: #1e3d8d;
+        border-radius: 20px;
+        color:white;
+        width:90%;
+        margin-left: auto;
+        margin-right:auto ;
+        position:relative;
+        &--name{
+           padding:20px;
+           padding-bottom:0px;
+           font-weight: 600;
+        }
+        &--secondName{
+            font-weight: 200;
+            padding:20px;
+            padding-top:0px;
+        }
+        &--items{
+            padding: 1px 20px 1px 20px;
+            font-weight:200;
+            font-size:13px;
+        }
+        &--button{
+            background-color: #1e3d8d;
+            color:white;
+            box-shadow:none;
+            border: solid 1px white;
+            margin:40px;
+           margin-left:30%;
+           
+        }
+    }
+}
+
+.kycTitle{
+    text-align: center;
+}
+.kycText{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:20px;
+}
+.kycButton{
+    color:white;
+    font-weight:bold;
+    padding:15px;
+   display:block;
+
+   margin: auto;
+   margin-bottom: 55px;
+   
+}
+.authenticatorTitle{
+    text-align:center;
+    
+}
+.authenticatorText{
+    text-align:center;
+    width:70%;
+    margin:auto;
+}
+.authenticatorButton{
+    color:#1e3d8d;
+    background-color: white;
+    border:solid 1px $colorBackgroundblue;
+    font-size: 15px;
+    box-shadow:none;
+    display:block;
+    margin:auto;;
+   margin-bottom:50px;
+   margin-top:50px;
+
+}
+
+/*-----------Login-----------------*/
+.login{
+    background-color: #1e3d8d;
+    &__title{
+        font-weight: 300;
+        font-size: 15px;
+        padding:20px;
+        color:white;
+        text-align: center;
+    }
+    &__logo{
+        height: 150px;
+        width:180px;
+        display:block;
+        margin-left: 95px;
+        margin-right: auto;
+        margin-top: 100px;
+
+    }
+    &__form{
+        margin:auto;
+        width:60%;
+        display:flex;
+        flex-direction: column;
+
+    }
+    &__email{
+        margin:50px;
+        
+    }
+    &__check{
+        display:flex;
+        justify-content: center;
+        padding:20px;
+        width:100%;
+        margin-right:20px;
+        &--square{
+            width:20px;
+            height:20px;
+            border:1px solid white;
+           margin-right:20px;
+        }
+       &--button{
+           width:40%;
+       }
+    }
+    &__buttonSide{
+        text-align: center;
+    &--subscribe{
+                 background-color:#1e3d8d;
+                 color:white;
+                 box-shadow: none,
+             }
+    &--passwordForget{
+                background-color:#1e3d8d;
+                color:white;
+                box-shadow: none,
+            }
+    }
+    
+}
