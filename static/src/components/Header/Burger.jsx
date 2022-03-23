@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -25,7 +24,9 @@ export default function Burger() {
             <p>Lending</p>
             <p>Contact</p>
             <AppButton>
-              <p className="txt">App</p>
+              <a href="https://planb-dapp.vercel.app/">
+                <p className="txt">Enter App</p>
+              </a>
             </AppButton>
           </div>
         </div>
@@ -83,7 +84,8 @@ const AppButton = styled.div`
   max-width: 75px;
   min-width: 40px;
   margin: 0 auto;
-
+  display: flex;
+  justify-content: center;
   &:hover {
     background-color: transparent;
     border: 1px solid white;
@@ -91,9 +93,13 @@ const AppButton = styled.div`
       color: white;
     }
   }
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
   .txt {
-    margin: 7px 17px 7px 17px;
-    color: #5299f5;
+    margin: 10px 21px 10px 21px;
     font-weight: 600;
+    color: #5299f5;
   }
 `;
