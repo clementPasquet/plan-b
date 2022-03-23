@@ -1,10 +1,8 @@
-/* eslint-disable prettier/prettier */
 import React from "react";
 import styled from "styled-components";
 import BlueLogo from "../assets/logo-blue.png";
 import GoldLogo from "../assets/logo-gold.png";
 import Burger from "./Burger";
-
 
 export default function Header() {
   return (
@@ -14,15 +12,18 @@ export default function Header() {
           <img src={window.innerWidth > 800 ? BlueLogo : GoldLogo} alt="Plan B Logo" className="logo" />
         </div>
         <div className="nav-elem">
-            <Burger />
+          <Burger />
           <ul>
             <li>Home</li>
             <li>Staking</li>
             <li>Lending</li>
             <li>Contact</li>
+
             <li>
               <AppButton>
-                <p className="txt">App</p>
+                <a href="https://planb-dapp.vercel.app/">
+                  <p className="txt">Enter App</p>
+                </a>
               </AppButton>
             </li>
           </ul>
@@ -76,7 +77,7 @@ const HeaderWrapper = styled.div`
         }
       }
       @media (max-width: 850px) {
-          display: none;
+        display: none;
       }
     }
   }
@@ -94,8 +95,13 @@ const AppButton = styled.div`
       color: white;
     }
   }
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
   .txt {
     margin: 10px 21px 10px 21px;
+    font-weight: 600;
     color: #5299f5;
   }
 `;
